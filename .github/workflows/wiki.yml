@@ -1,0 +1,72 @@
+name: Wiki
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install tools
+        run: pip install -r requirements.txt
+
+      - name: Lint Markdown
+        run: pymarkdown --config .pymarkdown.json scan -r docs
+
+      - name: Build site
+        run: zensical build --strict
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wiki-site
+          path: site/
+          retention-days: 7
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency:
+      group: wiki-deploy
+      cancel-in-progress: false
+    env:
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: wiki-site
+          path: site/
+
+      - name: Configure SSH
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          echo "SSH_CMD=ssh -i $HOME/.ssh/deploy_key -p ${DEPLOY_PORT:-22} -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes" >> "$GITHUB_ENV"
+
+      # The server side runs rrsync rooted at the staging directory, so "/"
+      # is that directory. --checksum because every build rewrites mtimes.
+      - name: Upload to staging
+        run: rsync -rz --checksum --delete --chmod=D755,F644 -e "$SSH_CMD" site/ "$DEPLOY_USER@$DEPLOY_HOST:/"
+
+      - name: Activate release
+        run: $SSH_CMD "$DEPLOY_USER@$DEPLOY_HOST" "activate $GITHUB_SHA"

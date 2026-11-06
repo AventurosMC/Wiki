@@ -1,0 +1,42 @@
+[project]
+site_name = "Wiki Aventuros"
+site_url = "https://wiki.aventuros.fr/"
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = true
+
+[project.theme]
+language = "fr"
+# Fonts are not loaded from Google Fonts, so the site needs no third-party origin.
+font = false
+features = [
+  "content.code.copy",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.top",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/moon"
+toggle.name = "Passer en mode sombre"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/sun"
+toggle.name = "Passer en mode clair"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.superfences = {}
