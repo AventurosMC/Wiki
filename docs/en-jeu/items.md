@@ -12,7 +12,7 @@ description: Description des items spéciaux du mod.
 Cette pioche a une durabilité assez faible, mais permet de récupérer les spawners en les minant, pour pouvoir les replacer autre part.
 
 <figure class="recette" markdown="span">
-  ![Recette de la Pioche à Spawner](images/recipes/craft_spawner_pickaxe.png)
+  ![Recette de la Pioche à Spawner](../images/recipes/craft_spawner_pickaxe.png)
   <figcaption>Recette de la Pioche à Spawner</figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ Cette pioche a une durabilité assez faible, mais permet de récupérer les spaw
 Cette pioche a une chance de faire exploser le bloc que vous venez de miner, ce qui peut permettre de découvrir des minerais cachés derrière les blocs alentour, ou simplement de miner plus vite. Le joueur qui utilise la pioche ne prendra pas de dégâts d'explosion lors de son utilisation.
 
 <figure class="recette" markdown="span">
-  ![Recette de la Pioche Explosive](images/recipes/craft_explosive_pickaxe.png)
+  ![Recette de la Pioche Explosive](../images/recipes/craft_explosive_pickaxe.png)
   <figcaption>Recette de la Pioche Explosive</figcaption>
 </figure>
 
@@ -34,11 +34,11 @@ Les marteaux en Aventurium et en Electronium permettent de creuser dans une zone
 
 <div class="recettes" markdown>
 <figure class="recette" markdown="span">
-  ![Recette du Marteau en Aventurium](images/recipes/craft_aventurium_hammer.png)
+  ![Recette du Marteau en Aventurium](../images/recipes/craft_aventurium_hammer.png)
   <figcaption>Recette du Marteau en Aventurium</figcaption>
 </figure>
 <figure class="recette" markdown="span">
-  ![Recette du Marteau en Electronium](images/recipes/craft_electronium_hammer.png)
+  ![Recette du Marteau en Electronium](../images/recipes/craft_electronium_hammer.png)
   <figcaption>Recette du Marteau en Electronium</figcaption>
 </figure>
 </div>
@@ -75,7 +75,7 @@ Cet anneau augmente les items récupérés en minant les minerais et en tuant de
 Une fois activé, l'aimant permet d'attirer à vous les objets au sol ainsi que les orbes d'expérience dans un rayon de 24 blocs.
 
 <figure class="recette" markdown="span">
-  ![Recette de l'Aimant](images/recipes/craft_magnet.png)
+  ![Recette de l'Aimant](../images/recipes/craft_magnet.png)
   <figcaption>Recette de l'Aimant</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Une fois activé, l'aimant permet d'attirer à vous les objets au sol ainsi que 
 Elle fonctionne de la même façon qu'une houe normale, mais son action s'applique sur une zone de 3x3 blocs.
 
 <figure class="recette" markdown="span">
-  ![Recette de la Houe en Galactium](images/recipes/craft_galactium_hoe.png)
+  ![Recette de la Houe en Galactium](../images/recipes/craft_galactium_hoe.png)
   <figcaption>Recette de la Houe en Galactium</figcaption>
 </figure>
 
@@ -96,11 +96,11 @@ Si vous vous retrouvez en l'air, ou en sautant d'une montagne, il permet simplem
 
 <div class="recettes" markdown>
 <figure class="recette" markdown="span">
-  ![Recette du Deltaplane](images/recipes/craft_hang_glider.png)
+  ![Recette du Deltaplane](../images/recipes/craft_hang_glider.png)
   <figcaption>Recette du Deltaplane</figcaption>
 </figure>
 <figure class="recette" markdown="span">
-  ![Recette de l'Aile](images/recipes/craft_wing.png)
+  ![Recette de l'Aile](../images/recipes/craft_wing.png)
   <figcaption>Recette de l'Aile</figcaption>
 </figure>
 </div>
@@ -118,7 +118,7 @@ Il ne peut être obtenu que dans les lucky-blocs et dans les caisses.
 Cet outil est efficace sur n'importe quel type de bloc. Comme son nom l'indique, il combine plusieurs outils : la pioche, la pelle, la hache, ainsi que l'épée.
 
 <figure class="recette" markdown="span">
-  ![Recette du Multi-Outil](images/recipes/craft_multitool.png)
+  ![Recette du Multi-Outil](../images/recipes/craft_multitool.png)
   <figcaption>Recette du Multi-Outil</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ Cet outil est efficace sur n'importe quel type de bloc. Comme son nom l'indique,
 Le chercheur de coffres affiche le nombre de blocs pouvant contenir des items dans une zone de 3x3 tronçons centrée sur le joueur. Il permet donc de trouver des bases cachées autour de vous, mais aussi des structures naturelles qui contiennent des coffres.
 
 <figure class="recette" markdown="span">
-  ![Recette du Chercheur de Coffres](images/recipes/craft_chest_finder.png)
+  ![Recette du Chercheur de Coffres](../images/recipes/craft_chest_finder.png)
   <figcaption>Recette du Chercheur de Coffres</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ Le chercheur de coffres affiche le nombre de blocs pouvant contenir des items da
 Cet item, lorsqu'il est dans votre inventaire, vous empêche de récupérer les items de pierre (cobble stone), de roche (stone) et leurs dérivés. Elle est très pratique en minage pour garder de la place dans votre inventaire pour les minerais.
 
 <figure class="recette" markdown="span">
-  ![Recette de la Cobble Void Stone](images/recipes/craft_cobble_void_stone.png)
+  ![Recette de la Cobble Void Stone](../images/recipes/craft_cobble_void_stone.png)
   <figcaption>Recette de la Cobble Void Stone</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ La clé de coffre vous permet de verrouiller un ou plusieurs conteneurs, de faç
 Vous pouvez faire un clic sur la clé pour définir le code, et faire un sneak-clic sur un conteneur pour le verrouiller ou le déverrouiller.
 
 <figure class="recette" markdown="span">
-  ![Recette de la Clé de coffre](images/recipes/craft_chest_key.png)
+  ![Recette de la Clé de coffre](../images/recipes/craft_chest_key.png)
   <figcaption>Recette de la Clé de coffre</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ Vous pouvez faire un clic sur la clé pour définir le code, et faire un sneak-c
 L'Annihilateur de Bedrock vous permet de… casser la Bedrock, hormis celle située sur la couche 0.
 
 <figure class="recette" markdown="span">
-  ![Recette de l'Annihilateur de Bedrock](images/recipes/craft_bedrock_annihilator.png)
+  ![Recette de l'Annihilateur de Bedrock](../images/recipes/craft_bedrock_annihilator.png)
   <figcaption>Recette de l'Annihilateur de Bedrock</figcaption>
 </figure>
 
@@ -193,7 +193,7 @@ Cette soupe donnera en la mangeant un petit effet de nausée pendant 5 secondes,
 - Faiblesse (Weakness) I
 
 <figure class="recette" markdown="span">
-  ![Recette de la Soupe Mystère](images/recipes/craft_mystery_stew.png)
+  ![Recette de la Soupe Mystère](../images/recipes/craft_mystery_stew.png)
   <figcaption>Recette de la Soupe Mystère</figcaption>
 </figure>
 
@@ -203,6 +203,6 @@ Cette soupe donnera en la mangeant un petit effet de nausée pendant 5 secondes,
 L'aventurie se consomme très rapidement, et donne un petit effet de rapidité une fois mangée, ce qui la rend très pratique pour régénérer pendant qu'un ennemi vous course.
 
 <figure class="recette" markdown="span">
-  ![Recette de l'Aventurie](images/recipes/craft_aventurie.png)
+  ![Recette de l'Aventurie](../images/recipes/craft_aventurie.png)
   <figcaption>Recette de l'Aventurie</figcaption>
 </figure>
