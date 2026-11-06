@@ -2,7 +2,7 @@
 description: Retrouvez les permissions de chaque grade du serveur.
 ---
 
-# Grades
+# Les Grades
 
 ## Joueur (sans grade)
 
