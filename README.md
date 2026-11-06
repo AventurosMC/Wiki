@@ -31,3 +31,9 @@ Run the same checks as CI before pushing:
 - **deploy**, only on pushes to `master` after build succeeds: it rsyncs the site to the server's staging directory over SSH, then activates it as a new release by atomically swapping a symlink.
 
 Server-side setup and the required secrets are described in [`server/README.md`](server/README.md).
+
+## License
+
+The wiki content in [`docs/`](docs/) is licensed under [CC BY-SA 4.0](LICENSE). Everything else (configuration, CI workflow, server scripts) is licensed under the [MIT License](LICENSE-CODE). By contributing, you agree to license your contribution under these same terms.
+
+Game screenshots and textures in [`docs/images/`](docs/images/) remain the property of their respective owners and are not covered by these licenses.
