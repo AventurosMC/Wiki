@@ -12,3 +12,6 @@ description: Bienvenue sur le wiki d'Aventuros. Vous pourrez trouver ici des inf
 - [Les items spéciaux](en-jeu/items.md)
 - [Les commandes](en-jeu/commandes.md)
 - [Les grades](en-jeu/grades.md)
+
+!!! tip "Contribuer au wiki"
+    Le wiki est ouvert aux contributions ! Si vous souhaitez corriger une erreur ou ajouter du contenu, rendez-vous sur le [dépôt GitHub du wiki](https://github.com/AventurosMC/Wiki){target="_blank" rel="noopener"}.
