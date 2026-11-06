@@ -4,6 +4,7 @@ site_url = "https://wiki.aventuros.fr/"
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
+copyright = 'Contenu sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="noopener">CC BY-SA 4.0</a> · <a href="https://github.com/AventurosMC/Wiki" target="_blank" rel="noopener">Contributeurs</a>'
 extra_css = ["stylesheets/extra.css"]
 nav = [
   { "Retour vers le site principal" = "https://aventuros.fr/" },

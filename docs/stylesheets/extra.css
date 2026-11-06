@@ -49,3 +49,13 @@
   flex-wrap: wrap;
   gap: 0 1.5em;
 }
+
+/* The theme renders the copyright as a block above "Made with Zensical";
+   inline keeps both on one line. */
+.md-copyright__highlight {
+  display: inline;
+}
+
+.md-copyright__highlight::after {
+  content: " · ";
+}
