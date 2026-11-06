@@ -1,0 +1,51 @@
+/* Item and ore textures are small pixel art, upscaled without smoothing. */
+.md-typeset img.item-icon {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0 1em 0.5em 0;
+  image-rendering: pixelated;
+}
+
+/* Each item section starts below the previous one's floated icon. */
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset figure.recette,
+.md-typeset .recettes {
+  clear: both;
+}
+
+/* `<figure markdown="span">` renders a <br> between the image and its
+   caption, which with the theme's caption margin detaches the caption. */
+.md-typeset figure > br {
+  display: none;
+}
+
+.md-typeset figure > img {
+  display: block;
+}
+
+.md-typeset figcaption {
+  max-width: none;
+  margin: 0.2em 0 0;
+  padding: 0.3em 0.6em;
+  background-color: var(--md-code-bg-color);
+  font-size: 0.85em;
+  font-style: normal;
+}
+
+.md-typeset figure.recette {
+  width: fit-content;
+  margin: 1em 0;
+}
+
+.md-typeset figure.recette img {
+  width: 248px;
+  image-rendering: pixelated;
+}
+
+.md-typeset .recettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5em;
+}

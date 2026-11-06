@@ -4,9 +4,11 @@ site_url = "https://wiki.aventuros.fr/"
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
+extra_css = ["stylesheets/extra.css"]
 
 [project.theme]
 language = "fr"
+favicon = "images/favicon.png"
 # Fonts are not loaded from Google Fonts, so the site needs no third-party origin.
 font = false
 features = [
