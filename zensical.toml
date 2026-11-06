@@ -5,6 +5,19 @@ docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
 extra_css = ["stylesheets/extra.css"]
+nav = [
+  { "Retour vers le site principal" = "https://aventuros.fr/" },
+  "index.md",
+  { "En jeu" = [
+    "en-jeu/commandes.md",
+    "en-jeu/grades.md",
+    "en-jeu/items.md",
+    "en-jeu/minerais.md",
+  ] },
+  { "Launcher" = [
+    "launcher/aide-install.md",
+  ] },
+]
 
 [project.theme]
 language = "fr"
